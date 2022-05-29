@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AjoutClient</class>
+ <widget class="QDialog" name="AjoutClient">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>519</width>
+    <height>483</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hotel </string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="image.qrc">
+    <normaloff>:/projetimages/projetimages/e.png</normaloff>:/projetimages/projetimages/e.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QDateEdit {
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+QLineEdit
+{
+
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+QDialog#AjoutClient
+{
+	background-image: url(:/projetimages/projetimages/a.jpg);
+
+}
+*{
+font-family:centry gothlic ;
+font-size:15px;
+}
+#frame
+{
+
+	background:rgba(0,0,0,0.7);
+border-radius:15px;
+}
+
+
+QPushButton
+ {
+     background-color: red;
+
+     border-radius: 10px;
+
+ }
+
+#label{
+color:white;
+background:transparent;
+
+}
+
+#label_2
+{
+color:white;
+background:transparent;
+
+}
+
+
+#label_3{
+color:white;
+background:transparent;
+
+}
+
+#label_4{
+color:white;
+background:transparent;
+
+}
+
+#label_5{
+color:white;
+background:transparent;
+
+}
+
+#label_6{
+color:white;
+background:transparent;
+
+}
+
+#label_7{
+color:white;
+background:transparent;
+
+}
+
+
+
+
+
+QPushButton
+{
+color:white;
+
+border-raduis:15px;
+}
+QPushButton#affecterreservation_btn:hover
+{
+
+	color:white;
+border-radius:15px;
+background:rgb(255, 85, 127);
+}
+</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>20</y>
+     <width>371</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLineEdit" name="adresseac_txt">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>290</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>130</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Prénom :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>20</y>
+      <width>231</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>centry gothlic</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Ajout d'un nouveau client</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="daitenaissanceac_txt">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>240</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>300</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Adresse :</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="telephoneac_txt">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>340</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>240</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Date de naissance :</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="cinac_txt">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>180</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>70</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nom :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>350</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Télephone :</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="prenomac_txt">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>130</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="nomac_txt">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>70</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="affecterreservation_btn">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>390</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Affecter Réservation</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>180</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CIN :</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

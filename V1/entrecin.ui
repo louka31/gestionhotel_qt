@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>entrecin</class>
+ <widget class="QDialog" name="entrecin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>752</width>
+    <height>191</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hotel</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="image.qrc">
+    <normaloff>:/projetimages/projetimages/e.png</normaloff>:/projetimages/projetimages/e.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLineEdit
+{
+background:transparent;
+border:none;
+color:#717072;
+border-bottom:1px solid #717072;
+}
+QDialog#entrecin
+{
+		background-image: url(:/projetimages/projetimages/a.jpg);
+
+}
+
+*{
+font-family:centry gothlic ;
+font-size:15px;
+}
+#frame
+{
+
+	background:rgba(0,0,0,0.7);
+border-radius:15px;
+}
+
+
+QPushButton
+ {
+     background-color: red;
+
+     border-radius: 10px;
+
+ }
+
+
+
+
+
+
+#label_2{
+color:white;
+background:transparent;
+
+}
+
+#label{
+color:white;
+background:transparent;
+
+}
+
+
+
+
+
+QPushButton
+{
+color:white;
+
+border-raduis:15px;
+}
+QPushButton:hover
+{
+
+	color: white;
+border-radius:15px;
+background:rgb(255, 85, 127);
+}</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>40</y>
+     <width>641</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>30</y>
+      <width>231</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Veuillez entrer le CIN du client :</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="cince_txt">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>30</y>
+      <width>201</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="affectereservation2_btn">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>80</y>
+      <width>151</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Affecter réservation</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

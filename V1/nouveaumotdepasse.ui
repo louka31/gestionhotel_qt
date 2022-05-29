@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NouveauMotDePasse</class>
+ <widget class="QDialog" name="NouveauMotDePasse">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>648</width>
+    <height>230</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string> Hotel</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="image.qrc">
+    <normaloff>:/projetimages/projetimages/e.png</normaloff>:/projetimages/projetimages/e.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLineEdit
+{
+background:transparent;
+border:none;
+color:#717072;
+border-bottom:1px solid #717072;
+}
+QDialog#NouveauMotDePasse
+{
+		background-image: url(:/projetimages/projetimages/a.jpg);
+
+}
+
+*{
+font-family:centry gothlic ;
+font-size:15px;
+}
+#frame
+{
+
+	background:rgba(0,0,0,0.7);
+border-radius:15px;
+}
+
+
+QPushButton
+ {
+     background-color: red;
+
+     border-radius: 10px;
+
+ }
+
+
+
+
+
+
+#label_3{
+color:white;
+background:transparent;
+
+}
+
+#label{
+color:white;
+background:transparent;
+
+}
+
+
+
+
+
+QPushButton
+{
+color:white;
+
+border-raduis:15px;
+}
+QPushButton:hover
+{
+color: white;
+border-radius:15px;
+background:rgb(255, 85, 127);
+}
+</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>19</x>
+     <y>19</y>
+     <width>601</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLineEdit" name="nouvmdp_txt">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>20</y>
+      <width>251</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>80</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Confirmer votre nouveau mot de passe :</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="nouvmdp2_txt">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>70</y>
+      <width>251</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>251</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Saissir vote nouveau mot de passse :</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="modifmdp_btn">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>110</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enregistrer</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

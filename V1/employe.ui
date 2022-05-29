@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Employe</class>
+ <widget class="QDialog" name="Employe">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1146</width>
+    <height>605</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hotel</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="image.qrc">
+    <normaloff>:/projetimages/projetimages/e.png</normaloff>:/projetimages/projetimages/e.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QTableView {
+selection-background-color:red;
+border-radius:15px;
+}
+
+QDialog{
+		background-image: url(:/projetimages/projetimages/a.jpg);
+}
+*{
+font-family:centry gothlic ;
+font-size:15px;
+}
+QWidget#widget{
+
+background:rgba(0,0,0,0.7);
+border-radius:15px;
+}
+QPushButton
+ {
+     background-color: red;
+
+     border-radius: 10px;
+
+ }
+#label{color:white;}
+QPushButton
+{
+color:white;
+
+border-raduis:15px;
+}
+QLineEdit
+{
+background:transparent;
+border:none;
+color:#717072;
+border-bottom:1px solid #717072;
+}
+QPushButton:hover
+{
+
+	color: white;
+border-radius:15px;
+background:rgb(255, 85, 127);
+}</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>1091</width>
+     <height>551</height>
+    </rect>
+   </property>
+   <widget class="QTableView" name="tableViewEmploye">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>1051</width>
+      <height>391</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ajouteremp_btn">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>Ajouter</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>40</y>
+      <width>271</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Saisir le CIN de l'employé à chercher :</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="cheremployeadmin_txt">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>60</y>
+      <width>291</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

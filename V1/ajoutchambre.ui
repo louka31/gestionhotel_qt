@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AjoutChambre</class>
+ <widget class="QDialog" name="AjoutChambre">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>525</width>
+    <height>289</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hotel</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="image.qrc">
+    <normaloff>:/projetimages/projetimages/e.png</normaloff>:/projetimages/projetimages/e.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+
+QLineEdit
+{
+
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+QDialog#AjoutChambre
+{
+	
+	background-image: url(:/projetimages/projetimages/a.jpg);
+
+}
+*{
+font-family:centry gothlic ;
+font-size:15px;
+}
+QWidget#widget
+{
+
+	background:rgba(0,0,0,0.7);
+border-radius:15px;
+}
+
+
+QPushButton
+ {
+     background-color: red;
+
+     border-radius: 10px;
+
+ }
+
+#label{
+color:white;
+background:transparent;
+
+}
+
+#label_2{
+color:white;
+background:transparent;
+
+}
+
+
+QPushButton
+{
+color:white;
+
+border-raduis:15px;
+}
+QPushButton#ajouterch_btn:hover
+{
+
+	color:white;
+border-radius:15px;
+background:rgb(255, 85, 127);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>481</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <widget class="QPushButton" name="ajouterch_btn">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>160</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ajouter</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="prixchaj_txt">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>100</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Numéro de chambre :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Prix de chambre :</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="numchaj_txt">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>50</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

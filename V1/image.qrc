@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../../projetimages/projetimages/1.png</file>
+        <file>../../projetimages/projetimages/2.png</file>
+        <file>../../projetimages/projetimages/3.png</file>
+        <file>../../projetimages/projetimages/4.jpg</file>
+        <file>../../projetimages/projetimages/5.png</file>
+        <file>../../projetimages/projetimages/6.png</file>
+        <file>../../projetimages/projetimages/7.png</file>
+        <file>../../projetimages/projetimages/a.jpg</file>
+        <file>../../projetimages/projetimages/aa.png</file>
+        <file>../../projetimages/projetimages/aaa.png</file>
+        <file>../../projetimages/projetimages/b.png</file>
+        <file>../../projetimages/projetimages/e.png</file>
+        <file>../../projetimages/projetimages/hotel-galvez.jpg</file>
+        <file>../../projetimages/projetimages/png-clipart-computer-icons-gear-icon-design-settings-desktop-wallpaper-silhouette.png</file>
+        <file>../../projetimages/projetimages/png-clipart-white-and-brown-hotel-building-illustration-hotel-manager-child-apps-hotel-illustration-hotels-lights-text.png</file>
+        <file>../../projetimages/projetimages/pngtree-cartoon-gear-icon-download-image_1251421 (1).jpg</file>
+        <file>../../projetimages/projetimages/pngtree-cartoon-gear-icon-download-image_1251421.jpg</file>
+    </qresource>
+</RCC>

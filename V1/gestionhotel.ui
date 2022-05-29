@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GestionHotel</class>
+ <widget class="QDialog" name="GestionHotel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1078</width>
+    <height>631</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hotel</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="image.qrc">
+    <normaloff>:/projetimages/projetimages/e.png</normaloff>:/projetimages/projetimages/e.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QTableView {
+    selection-background-color:red;
+border-radius:15px;
+}
+
+QDialog#GestionHotel
+{
+		background-image: url(:/projetimages/projetimages/a.jpg);
+
+}
+*{
+font-family:centry gothlic ;
+font-size:15px;
+}
+#widget
+{
+
+	background:rgba(0,0,0,0.7);
+border-radius:15px;
+}
+ 
+QPushButton
+ {
+     background-color: red;
+
+     border-radius: 10px;
+font-size:22px;
+
+
+ }
+
+
+
+
+QPushButton
+{
+color:white;
+
+border-raduis:15px;
+}
+QPushButton:hover
+{
+color: white;
+border-radius:15px;
+background:rgb(255, 85, 127);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>1021</width>
+     <height>561</height>
+    </rect>
+   </property>
+   <widget class="QPushButton" name="quittersuperadmin_btn">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>20</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/projetimages/aa.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/projetimages/projetimages/aa.png</normaloff>:/projetimages/projetimages/aa.png</iconset>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableViewGestionHotel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>90</y>
+      <width>941</width>
+      <height>441</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ajouterhotel_btn">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ajouter</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TableauDeBord</class>
+ <widget class="QDialog" name="TableauDeBord">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1550</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hotel</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="image.qrc">
+    <normaloff>:/projetimages/projetimages/e.png</normaloff>:/projetimages/projetimages/e.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QDialog#TableauDeBord
+{
+		background-image: url(:/projetimages/projetimages/a.jpg);
+}
+*{
+font-family:centry gothlic ;
+font-size:15px;
+}
+QWidget#widget
+{
+
+	background:rgba(0,0,0,0.7);
+border-radius:15px;
+}
+#label{
+font-family:centry gothlic ;
+font-size:18px;
+color:white;
+
+}
+#Nom{
+font-family:centry gothlic ;
+font-size:18px;
+color:white;
+
+}
+#label_2{
+font-family:centry gothlic ;
+font-size:18px;
+color:white;
+}
+QPushButton
+ {
+background-color: red;
+border-radius: 10px;
+font-size:22px;
+color:white;
+border-raduis:15px;
+
+ }
+
+QPushButton:hover
+{
+color: white;
+border-radius:15px;
+background:rgb(255, 85, 127);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>1490</width>
+     <height>760</height>
+    </rect>
+   </property>
+   <widget class="QPushButton" name="quitteradmin_btn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/projetimages/projetimages/aa.png</normaloff>:/projetimages/projetimages/aa.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>25</width>
+      <height>25</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="resencoursadmin_btn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>280</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Réservations en cours</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hoteladmin_btn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>630</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hôtel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clientadmin_btn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>390</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clients</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="chambreadmin_btn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>450</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Chambres</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="typelogadmin_btn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>510</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Types de logements</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="compteadmin_btn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/projetimages/projetimages/aaa.png</normaloff>:/projetimages/projetimages/aaa.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="employeadmin_btn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>570</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Employés</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="historiqueadmin_btn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>330</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Historique</string>
+    </property>
+   </widget>
+   <widget class="QCustomPlot" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>280</y>
+      <width>521</width>
+      <height>421</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCustomPlot" name="widget_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>931</x>
+      <y>281</y>
+      <width>520</width>
+      <height>421</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>421</x>
+      <y>231</y>
+      <width>401</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Chiffres d'affaires selon les 5 derniers années</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>981</x>
+      <y>241</y>
+      <width>421</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nombre des réservations dans les 5 derniers années</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Nom">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>60</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_4" native="true">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>30</y>
+      <width>221</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#widget_4
+ {
+background-color: qlineargradient(spread:pad, x1:0, y1:0.517, x2:0.975, y2:0.102, stop:0.766949 rgba(36, 140, 173, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius: 10px;
+font-size:22px;
+border-raduis:15px;
+
+}QLabel{
+font-family:centry gothlic ;
+font-size:18px;
+color:white;
+
+}
+#nbrchambretotale_txt{
+font: 24pt;
+
+}</string>
+    </property>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>141</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Chambres </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="nbrchambretotale_txt">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Te</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>60</y>
+       <width>121</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/projetimages/projetimages/2.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_5" native="true">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>30</y>
+      <width>211</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#widget_5
+ {
+background-color: qlineargradient(spread:pad, x1:0, y1:0.517, x2:0.975, y2:0.102, stop:0.762712 rgba(193, 40, 118, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius: 10px;
+font-size:22px;
+border-raduis:15px;
+
+ }
+QLabel{
+font-family:centry gothlic ;
+font-size:18px;
+color:white;
+
+}
+#nbrclientstotale_txt{
+font: 24pt;
+
+}</string>
+    </property>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clients </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="nbrclientstotale_txt">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Te</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>60</y>
+       <width>55</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/projetimages/projetimages/3.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_6" native="true">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>30</y>
+      <width>211</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#widget_6
+ {
+background-color:qlineargradient(spread:pad, x1:0, y1:0.517, x2:0.975, y2:0.102, stop:0.800847 rgba(209, 103, 44, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius: 10px;
+font-size:22px;
+border-raduis:15px;
+
+ }
+QLabel{
+font-family:centry gothlic ;
+font-size:18px;
+color:white;
+
+}
+#nbremployetotale_txt{
+font: 24pt;
+
+}</string>
+    </property>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>60</y>
+       <width>55</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+image: url(:/projetimages/projetimages/5.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Employés </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="nbremployetotale_txt">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Te</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_7" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>30</y>
+      <width>231</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#widget_7
+ {
+background-color:qlineargradient(spread:pad, x1:0, y1:0.517, x2:0.903, y2:0.130409, stop:0.775424 rgba(44, 209, 174, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius: 10px;
+font-size:22px;
+border-raduis:15px;
+
+ }
+QLabel{
+font-family:centry gothlic ;
+font-size:17px;
+color:white;
+
+}
+#nbrreservationsencours_txt{
+font: 24pt;
+
+}</string>
+    </property>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>70</y>
+       <width>55</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/projetimages/projetimages/7.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>171</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Réservations en cours </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="nbrreservationsencours_txt">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Te</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_8" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1270</x>
+      <y>30</y>
+      <width>211</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#widget_8
+ {
+background-color: qlineargradient(spread:pad, x1:0, y1:0.517, x2:0.903, y2:0.130409, stop:0.775424 rgba(209, 48, 193, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius: 10px;
+font-size:22px;
+border-raduis:15px;
+
+ }
+QLabel{
+font-family:centry gothlic ;
+font-size:16px;
+color:white;
+
+}
+#nbrchambresdispo_txt{
+font: 24pt;
+
+}</string>
+    </property>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>60</y>
+       <width>161</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Chambres disponibles </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>60</y>
+       <width>55</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/projetimages/projetimages/6.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="nbrchambresdispo_txt">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Te</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header location="global">qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
